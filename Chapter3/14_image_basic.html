@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>14. image_basic</title>
+</head>
+<body>
+    <h2>이미지 삽입하기</h2>
+    <img src="Penguins.jpg" alt="펭귄" width="300">
+    <img src="Nothing" alt="그림이 존재하지 않습니다." width="300">
+
+    <img src="https://th.bing.com/th/id/OIP.f7Aq5kiKkG7_R2BYExLUvgHaEx?w=258&h=180&c=7&r=0&o=7&pid=1.7&rm=3" width="500">
+    <!-- https://th.bing.com/th/id/OIP.f7Aq5kiKkG7_R2BYExLUvgHaEx?w=258&h=180&c=7&r=0&o=7&pid=1.7&rm=3 -->
+
+    <h2>음악 삽입하기</h2>
+    <audio scr="Kalimba.mp3" control="control"></audio>
+
+    <h2>웹 브라우저 제약이 없도록 음악 삽입</h2>
+    <audio control="control">
+        <source src="Kalimba.mp3" type="audio/mp3">
+        <source src="Kalimba.ogg" type="audio/ogg">
+    </audio>
+
+    <h2>동영상 삽입</h2>
+    <video control="control" width="700">
+        <source src="Wildlife.mp4" type="video/mp4">
+        <source src="Wildlife.webm" type="video/webm">
+    </video>
+
+    <h2>동영상 불러오는 동안 다른 이미지 보여주기</h2>
+    <video control="control" poster="https://th.bing.com/th/id/OIP.rUBNcjOt_d9E7_ZH2MuUFAHaHa?w=171&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+        <source src="Wildlife.mp4" type="video/mp4">
+        <source src="Wildlife.webm" type="video/webm">
+    </video>
+
+
+</body>
+</html>
